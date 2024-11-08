@@ -33,7 +33,7 @@ namespace SQLConnection
                 if (connection.State == ConnectionState.Closed)
                 {
                     connection.Open();
-                    MessageBox.Show("Connected to the database successfully!");
+                    //MessageBox.Show("Connected to the database successfully!");
                 }
             }
             catch (Exception ex)
@@ -48,7 +48,7 @@ namespace SQLConnection
                 if (connection.State == ConnectionState.Open)
                 {
                     connection.Close();
-                    MessageBox.Show("Disconnected from the database.");                    
+                    //MessageBox.Show("Disconnected from the database.");                    
                 }
             }
             catch (Exception ex)
